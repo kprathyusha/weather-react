@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <p className="Footer">
             <a
-                href="https://github.com/kprathyusha/weather-app"
+                href="https://github.com/kprathyusha/weather-react"
                 target="_blank"
                 rel="noreferrer"
             >
