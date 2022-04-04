@@ -1,7 +1,7 @@
 body {
-    background-image: url("media/rainy-day.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-image: linear-gradient(to right bottom, #21325e, #9198e5);
 }
