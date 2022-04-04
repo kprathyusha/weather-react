@@ -19,11 +19,11 @@ export default function Weather() {
                 <div className="col-sm-4 align-self-center">
                     <span className="temperature">10</span>
                     <span className="units">
-                        <a href="#" className="celsius active">
+                        <a href="/" className="celsius active">
                             °C
                         </a>
                         |
-                        <a href="#" className="fahrenheit">
+                        <a href="/" className="fahrenheit">
                             °F
                         </a>
                     </span>
