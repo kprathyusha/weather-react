@@ -1,0 +1,33 @@
+.Weather {
+    padding: 20px;
+}
+.Weather h1 {
+    font-size: 75px;
+    line-height: 0.8;
+    font-weight: 800;
+    margin: 8px auto;
+}
+.Weather .temperature {
+    font-size: 60px;
+}
+
+.Weather .units {
+    font-size: 22px;
+    position: relative;
+    top: -25px;
+}
+.Weather a {
+    text-decoration: none;
+}
+.Weather .pattern {
+    list-style: none;
+    padding: 2px;
+    margin: 0 auto;
+}
+.Weather .description::first-letter {
+    text-transform: capitalize;
+}
+.Weather .icon {
+    height: 50%;
+    width: 50%;
+}
