@@ -1,5 +1,5 @@
 import "./App.css";
-import Form from "./Form";
+import SearchWeather from "./SearchWeather";
 // import Weather from "./Weather";
 import Footer from "./Footer";
 
@@ -7,9 +7,9 @@ export default function App() {
     return (
         <div className="Wrapper">
             <div className="App">
-                <Form />
+                <SearchWeather defaultCity="Toronto" />
                 {/* <hr />
-                 <Weather />  */}
+                <Weather /> */}
                 <hr />
             </div>
             <Footer />

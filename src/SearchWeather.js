@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Form.css";
+import "./SearchWeather.css";
 import Weather from "./Weather";
 
-export default function Form() {
-    const [city, setCity] = useState("Toronto");
+export default function SearchWeather(props) {
     const [weatherDetails, setWeatherDetails] = useState({ ready: false });
+    const [city, setCity] = useState(props.defaultCity);
 
     function search() {
         const apiKey = "f64f24c2cb65bc7a2a8ea12b29366908";
@@ -41,7 +41,7 @@ export default function Form() {
     if (weatherDetails.ready) {
         return (
             <div>
-                <form className="Form" onSubmit={handleSubmit}>
+                <form className="SearchWeather" onSubmit={handleSubmit}>
                     <input
                         type="search"
                         className="search-city"
