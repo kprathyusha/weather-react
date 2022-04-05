@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import "./Form.css";
 
 export default function Form() {
@@ -16,13 +17,6 @@ export default function Form() {
                     className="btn btn-outline-light search-btn"
                     value="Search"
                 />
-
-                <button
-                    type="button"
-                    className="btn btn-outline-light location-btn"
-                >
-                    <i className="fa-solid fa-location-dot"></i>
-                </button>
             </form>
         </div>
     );
