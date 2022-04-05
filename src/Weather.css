@@ -19,7 +19,7 @@
 }
 .Weather a {
     text-decoration: none;
-    color: #eee;
+    /* color: #eee; */
 }
 .Weather .pattern {
     list-style: none;

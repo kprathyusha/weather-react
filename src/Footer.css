@@ -4,5 +4,6 @@
     color: #eee;
 } */
 .Footer a {
-    color: #eee;
+    /* color: #eee; */
+    text-decoration: none;
 }

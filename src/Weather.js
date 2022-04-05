@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import TemperatureConversion from "./TemperatureConversion";
 import "./Weather.css";
 // import WeatherIcon from "./media/cloudy.png";
 
@@ -22,18 +23,9 @@ export default function Weather(props) {
                     />
                 </div>
                 <div className="col-sm-4 align-self-center">
-                    <span className="temperature">
-                        {props.details.temperature}
-                    </span>
-                    <span className="units">
-                        <a href="/" className="celsius active">
-                            °C
-                        </a>
-                        |
-                        <a href="/" className="fahrenheit">
-                            °F
-                        </a>
-                    </span>
+                    <TemperatureConversion
+                        celsiusTemp={props.details.temperature}
+                    />
                     <div>
                         Feels like
                         <span className="temperature-feels-like">
