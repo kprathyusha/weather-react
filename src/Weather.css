@@ -29,7 +29,10 @@
 .Weather .description::first-letter {
     text-transform: capitalize;
 }
-.Weather .icon {
+/* .Weather .humidity, .wind{
+    font-weight: bold;
+} */
+/* .Weather .icon {
     height: 50%;
     width: 50%;
-}
+} */

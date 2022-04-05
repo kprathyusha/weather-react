@@ -3,11 +3,12 @@
 }
 .Form .search-city {
     line-height: normal;
-    padding: 9px 2px;
+    padding: 7px 2px;
     background-color: transparent;
     border: 1px solid #eee;
     border-radius: 5px;
     outline-offset: 0;
+    color: #eee;
 }
 .Form .search-city::placeholder {
     text-align: left;

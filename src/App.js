@@ -1,6 +1,6 @@
 import "./App.css";
 import Form from "./Form";
-import Weather from "./Weather";
+// import Weather from "./Weather";
 import Footer from "./Footer";
 
 export default function App() {
@@ -8,8 +8,8 @@ export default function App() {
         <div className="Wrapper">
             <div className="App">
                 <Form />
-                <hr />
-                <Weather />
+                {/* <hr />
+                 <Weather />  */}
                 <hr />
             </div>
             <Footer />
