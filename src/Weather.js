@@ -1,4 +1,5 @@
 import React from "react";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 // import WeatherIcon from "./media/cloudy.png";
 
@@ -9,7 +10,7 @@ export default function Weather(props) {
                 <h1>{props.details.city}</h1>
                 <h4>{props.details.country}</h4>
                 <p className="date-time" id="dateTime">
-                    Friday, Mar 25, 4:30 p.m
+                    <FormattedDate date={props.details.date} />
                 </p>
             </div>
             <div className="row current-city-details">
