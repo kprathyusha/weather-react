@@ -4,13 +4,11 @@ export default function TemperatureConversion(props) {
     const [unit, setUnit] = useState("celsius");
 
     function showFahrenheit(event) {
-        console.log("showFahrenheit");
         event.preventDefault();
         setUnit("fahrenheit");
     }
 
     function showCelsius(event) {
-        console.log("showCelsius");
         event.preventDefault();
         setUnit("celsius");
     }

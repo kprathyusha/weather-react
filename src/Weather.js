@@ -2,7 +2,6 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import TemperatureConversion from "./TemperatureConversion";
 import "./Weather.css";
-// import WeatherIcon from "./media/cloudy.png";
 
 export default function Weather(props) {
     return (

@@ -19,7 +19,6 @@
 }
 .Weather a {
     text-decoration: none;
-    /* color: #eee; */
 }
 .Weather .pattern {
     list-style: none;
@@ -29,10 +28,3 @@
 .Weather .description::first-letter {
     text-transform: capitalize;
 }
-/* .Weather .humidity, .wind{
-    font-weight: bold;
-} */
-/* .Weather .icon {
-    height: 50%;
-    width: 50%;
-} */
