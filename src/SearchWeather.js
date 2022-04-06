@@ -10,8 +10,8 @@ export default function SearchWeather(props) {
     function search() {
         const apiKey = "f64f24c2cb65bc7a2a8ea12b29366908";
         const apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
-        let url = `${apiEndpoint}?q=${city}&appid=${apiKey}&units=metric`;
-        axios.get(url).then(showWeather);
+        let apiUrl = `${apiEndpoint}?q=${city}&appid=${apiKey}&units=metric`;
+        axios.get(apiUrl).then(showWeather);
     }
 
     function showWeather(response) {
@@ -19,7 +19,7 @@ export default function SearchWeather(props) {
             ready: true,
             city: response.data.name,
             country: response.data.sys.country,
-            temperature: Math.round(response.data.main.temp),
+            temperature: response.data.main.temp,
             humidity: response.data.main.humidity,
             wind: Math.round(response.data.wind.speed * 3.6),
             description: response.data.weather[0].description,
@@ -61,6 +61,6 @@ export default function SearchWeather(props) {
         );
     } else {
         search();
-        return "Loading...";
+        return "loading.....";
     }
 }
