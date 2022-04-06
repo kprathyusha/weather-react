@@ -4,6 +4,7 @@ export default function TemperatureConversion(props) {
     const [unit, setUnit] = useState("celsius");
 
     function showFahrenheit(event) {
+        console.log("showFahrenheit");
         event.preventDefault();
         setUnit("fahrenheit");
     }
@@ -39,7 +40,7 @@ export default function TemperatureConversion(props) {
                     {Math.round(fahrenheitTemp())}
                 </span>
                 <span className="units">
-                    <a href="/" onCilck={showCelsius}>
+                    <a href="/" onClick={showCelsius}>
                         °C{" "}
                     </a>
                     | °F
