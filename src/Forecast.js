@@ -25,7 +25,7 @@ export default function Forecast(props) {
                     <div className="col">
                         <h6>{forecast[0].dt}</h6>
                         <img
-                            src={forecast[0].weather[0].icon}
+                            src={`https://openweathermap.org/img/wn/${forecast[0].weather[0].icon}.png`}
                             alt="clear"
                             width="45"
                         />
