@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./SearchWeather.css";
 import Weather from "./Weather";
+import Forecast from "./Forecast";
 
 export default function SearchWeather(props) {
     const [weatherDetails, setWeatherDetails] = useState({ ready: false });
@@ -26,6 +27,7 @@ export default function SearchWeather(props) {
             icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
             feelsLike: Math.round(response.data.main.feels_like),
             date: new Date(response.data.dt * 1000),
+            coords: response.data.coord,
         });
     }
 
@@ -57,6 +59,8 @@ export default function SearchWeather(props) {
                 </form>
                 <hr />
                 <Weather details={weatherDetails} />
+                <hr />
+                <Forecast coordinates={weatherDetails.coords} />
             </div>
         );
     } else {

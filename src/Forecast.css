@@ -1,0 +1,7 @@
+.Forecast {
+    margin: 0 auto;
+    padding: 2px;
+}
+.Forecast .col {
+    max-width: 100%;
+}
