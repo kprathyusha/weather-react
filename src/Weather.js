@@ -1,6 +1,5 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-// import TemperatureConversion from "./TemperatureConversion";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -23,7 +22,7 @@ export default function Weather(props) {
                 </div>
                 <div className="col-sm-4 align-self-center">
                     <span class="temperature" id="degrees">
-                        {props.details.temperature}°C
+                        {Math.round(props.details.temperature)}°C
                     </span>
 
                     <div>
