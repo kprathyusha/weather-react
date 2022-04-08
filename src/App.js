@@ -8,8 +8,6 @@ export default function App() {
         <div className="Wrapper">
             <div className="App">
                 <SearchWeather defaultCity="Toronto" />
-
-                <hr />
             </div>
             <Footer />
         </div>

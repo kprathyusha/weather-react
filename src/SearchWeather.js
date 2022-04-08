@@ -9,7 +9,7 @@ export default function SearchWeather(props) {
     const [city, setCity] = useState(props.defaultCity);
 
     function search() {
-        const apiKey = "f64f24c2cb65bc7a2a8ea12b29366908";
+        const apiKey = "3bc657df34a7bf7caefd63572d2a7bfd";
         const apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
         let apiUrl = `${apiEndpoint}?q=${city}&appid=${apiKey}&units=metric`;
         axios.get(apiUrl).then(showWeather);

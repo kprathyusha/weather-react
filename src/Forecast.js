@@ -10,8 +10,9 @@ export default function Forecast(props) {
     useEffect(() => {
         setLoaded(false);
     }, [props.coordinates]);
+
     function load() {
-        const apiKey = "f64f24c2cb65bc7a2a8ea12b29366908";
+        const apiKey = "3bc657df34a7bf7caefd63572d2a7bfd";
         let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${props.coordinates.lat}&lon=${props.coordinates.lon}&appid=${apiKey}&units=metric`;
         console.log(apiUrl);
         axios.get(apiUrl).then(handleResponse);
