@@ -9,7 +9,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
             >
-                Open-source code on by
+                Open-source code by
             </a>
             <span> Prathyusha K</span>
         </p>
